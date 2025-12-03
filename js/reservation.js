@@ -41,7 +41,7 @@
         }
         
         
-        if (parseInt(guests) < 1 || guests === '') {
+        if ((guests) < 1 || guests === '') {
             errors.push('Number of guests must be 1 or more.');
         }
         
@@ -87,7 +87,7 @@
             
             errorDiv.style.display = 'none'; 
 
-            console.log("Validation Passed! Data:", {name, email, phone, date, time, guests: parseInt(guests)});
+            console.log("Validation Passed! Data:", {name, email, phone, date, time, guests: (guests)});
             alert(' Thank YouReservation confirmed!');
             
             
@@ -95,4 +95,3 @@
         }
 
     });
-
