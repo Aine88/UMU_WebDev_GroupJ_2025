@@ -1,0 +1,157 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color:brown;
+        }
+
+        .container {
+            width: 100%;
+            
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-image: url(abt-us\ images/space.jpg);
+            box-shadow: 0 0 10px brown;
+        }
+
+        header {
+            background: #4a3f35;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        h2 {
+            color: beige;
+            margin-bottom: 10px;
+            text-align: center;
+            background-color:  #4a3f35;;
+        }
+
+        p {
+            background-color: #4a3f35;
+            text-align: center;
+            font-size: 16px;
+            color: #ebd3d3;
+            margin-bottom: 20px;
+        }
+  .about-section, .mission, .team {
+            
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .about-section h2, .mission h2, .team h2 {
+            margin-top: 0;
+        }
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .team-members {
+            
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .team-member h3 {
+            margin: 10px 0 5px 0;
+        }
+        .team-member p {
+            font-size: 14px;
+            color: #333;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        
+
+.team-card {
+    background: #261717;
+    border: 6px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    width: 250px;
+    color: white; 
+}
+
+        .team-card img {
+            border: 100%;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 1px;
+        }
+
+        .team-card :hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .navbar {
+            background: rgba(178, 110, 110, 0.086) ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #f4a261;
+        }
+        .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    margin-bottom: 10px; 
+        }
+
