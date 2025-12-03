@@ -2,13 +2,13 @@ body{
     font-family: Arial, sans-serif;
     margin:0;
     padding:0;
-    background-color: #f4f4f4;
+    background-color: rgba(165, 42, 42, 0.164);
     
     align-items: center;
     padding: 20px;
 }
 .navbar{
-    background-color: rgba;
+    background-color:rgba(160, 30, 30, 0.164); ;
     padding:15px 30px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     display:flex;

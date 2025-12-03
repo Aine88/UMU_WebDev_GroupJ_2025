@@ -1,11 +1,5 @@
 
- 
-
-
-
-
-    
-    const form = document.getElementById('bookingForm');
+   const form = document.getElementById('bookingForm');
     const errorDiv = document.getElementById('error');
 
     
