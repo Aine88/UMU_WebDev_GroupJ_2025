@@ -1,26 +1,48 @@
-// script.js
-const text = "Welcome to Our Team! We innovate, inspire, and impact.";
-const target = document.getElementById("about-text");
+document.addEventListener('DOMContentLoaded', () => {
+   
+    const teamCards = document.querySelectorAll('.team-card');
 
-let words = text.split(" "); // split into words
-let i = 0;
+    teamCards.forEach(card => {
+        
+        const images = card.querySelectorAll('img');
+        
+    
+        if (images.length < 2) return; 
 
-function typeWord() {
-    if (i < words.length) {
-        const span = document.createElement("span");
-        span.textContent = words[i] + " ";
-        span.style.opacity = 0;
-        span.style.transition = "opacity 0.8s ease-in-out";
-        target.appendChild(span);
+        let currentImageIndex = 0;
+        images.forEach((img, index) => {
+            img.style.transition = 'opacity 0.8s ease-in-out'; 
+            img.style.position = 'absolute'; 
+            img.style.top = '0';
+            img.style.left = '0';
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.borderRadius = '8px';
+            img.style.opacity = (index === 0) ? 1 : 0; 
+            img.style.zIndex = (index === 0) ? 10 : 1; 
+        });
 
-        // fade in effect
-        setTimeout(() => {
-            span.style.opacity = 1;
-        }, 100);
+        
+        card.style.position = 'relative'; 
+      
+        
+      
+        const nextImage = () => {
+            const nextIndex = (currentImageIndex + 1) % images.length;
 
-        i++;
-        setTimeout(typeWord, 300); // delay between words
-    }
-}
+            
+            images[currentImageIndex].style.opacity = 0;
+            images[currentImageIndex].style.zIndex = 1;
+            
+            
+            images[nextIndex].style.opacity = 1;
+            images[nextIndex].style.zIndex = 10;
 
-window.onload = typeWord;
+            currentImageIndex = nextIndex;
+        };
+
+        
+    
+        setInterval(nextImage, 4000); 
+    });
+});
