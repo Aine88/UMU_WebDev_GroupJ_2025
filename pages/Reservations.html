@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookings</title>
+    <link rel="stylesheet" href="https://aine88.github.io/UMU_WebDev_GroupJ_2025/css/reservation.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="" class="navbar-brand">Rustic Graden</a>
+        <div class="navbar-links">
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Menu</a>
+            <a href="">Services</a>
+            <a href="">Booking and Reservations</a>
+            <a href="">Contact and Location</a>
+
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="container">
+            <h1>Reservations  Book </h1>
+            <p class="subtitle">Book Your reservations at Rustic Garden. And order now</p>
+             
+            <form  id="bookingForm">
+
+                <h2>Customer contact Details</h2>
+                <div class="input">
+                    <div class="field">
+                        <label for="name">Customer's name</label>
+                        <input type="text" name="name" id="name" placeholder="Customer's name" >
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone_ number" placeholder="telephone number" >
+                    </div>
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="username@example.com" >
+                      </div>
+                     </div>
+                        <h2>Reservation Details</h2>
+                     <div class="input">
+                        <div class="field">
+                        <label for="time">  Time </label>
+                        <input type="time" id="time" name="time" >
+                     </div>
+                     <div class="field">
+                        <label for="date" >Date</label>
+                        <input type="date" id="date" name="date" >
+                     </div>
+                     <div class="field">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" >
+                     </div>
+                     <div class="radio">
+                        <input type="radio" id="standard" name="seating" value="standard">
+                        <label for="standard">Standard Table</label>
+
+                        <input type="radio" id="booth" name="seating" value="booth">
+                        <label for="booth">Booth</label>
+
+                        <input type="radio" id="window" name="seating" value="window">
+                        <label for="window">Window Seat</label>
+                     </div>
+                     </div>
+
+                     <div class="field">
+                        <label for="occasion">Special occassion</label>
+                        <input type="text" id="occasion" name="special_occasion">
+
+                     </div>
+
+                <div id="error" class="errors" >
+                </div>
+                     
+
+                     <button type="submit">Confirm Reservation</button>
+            </form>
+        </div>
+    </div>
+    <p>We also do deliveries around the country. So our can always check on website offers and discounts that give every beginning of a new month</p>
+    <footer>
+        <p class="footer" >
+             &copy; KATO CALVIN / 2025-B221-10207 / Bsc Education
+        </p>
+    </footer>
+    <script src="reservation.js"></script>
+</body>
+</html>
