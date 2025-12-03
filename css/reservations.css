@@ -1,0 +1,140 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: #f4f4f4;
+    
+    align-items: center;
+    padding: 20px;
+}
+.navbar{
+    background-color: rgba;
+    padding:15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:green;
+    text-decoration: none;
+}
+.navbar-links a{
+    color:black;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+.navbar-links a:hover{
+    color:#007bff;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    padding: 0 4px 10px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    width:100%;
+    background: url('food2.jpg') no-repeat center center/cover;
+    
+}
+
+.container{
+    color:black;
+    padding: 20px;
+    border:1px solid;
+     border-radius:10px ;
+     box-shadow:0 0 10px rgba (0,0,0,0.1);
+}
+h2{
+    text-align: center;
+    color:#333;
+    margin-bottom: 15px;
+
+}.input{
+    margin-bottom: 15px;
+}
+label{
+    display:block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:#555;
+    font-size: 0.9rem;
+    
+}input{
+    width: 100%;
+    padding: 10px;
+    border:1px solid #ccc;
+    border-radius: 4px ;
+    box-sizing: border-box;
+}
+.radio{
+    
+    display:inline-block;
+    margin-right: 15px;
+}
+button{
+      background-color: #4CAF50; 
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+}
+ button:hover {
+     background-color: #45a049;
+ }.footer{
+    color:red;
+ }
+
+ .error-error {
+      color: #a42020;
+      background-color: #f8d0d0;
+      border: 1px solid #e0b4b4;
+ }
+  .error-success {
+     color: #1a5538;
+     background-color: #d0f8e0;
+      border: 1px solid #b4e0b4;
+ }
+  @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            .navbar-links {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar-links a {
+                margin: 5px 0;
+            }
+        }
+        @media (max-width: 540px) {
+            .input-field {
+                min-width: 100%; 
+            }
+            .input-group {
+                gap: 0;
+            }
+        }
+    
+
+
+
+
+    
+    
+    
+    
+    
