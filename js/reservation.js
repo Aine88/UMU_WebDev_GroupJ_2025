@@ -88,10 +88,11 @@
             errorDiv.style.display = 'none'; 
 
             console.log("Validation Passed! Data:", {name, email, phone, date, time, guests: (guests)});
-            alert(' Thank YouReservation confirmed!');
+            alert(' Thank You Reservation confirmed!');
             
             
             form.reset(); 
         }
 
     });
+
