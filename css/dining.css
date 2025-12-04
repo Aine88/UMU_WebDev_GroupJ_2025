@@ -20,6 +20,7 @@
     border-radius: 20px;
     padding: 40px 50px;
     border: 2px solid #5a0f0f;
+}
     
 
 nav{
@@ -94,14 +95,13 @@ nav a {
     flex-wrap: wrap;
 }
 
-/* Flip card container */
 .flip-card {
     width: 100%;
     height: 380px;
     perspective: 1000px;
 }
 
-/* Inner wrapper */
+
 .flip-card-inner {
     width: 100%;
     height: 100%;
@@ -110,12 +110,12 @@ nav a {
     transition: transform 0.6s;
 }
 
-/* Trigger flip */
+
 .flip-card.flip .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/* Front & Back */
+
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -148,3 +148,4 @@ nav a {
     flex-direction: column;
     justify-content: center;
 }
+
